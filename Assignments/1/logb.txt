@@ -1,0 +1,12 @@
+12:05:28 INFO  Thread-1 0 Remote:50 - remote daemon id = 15 for call-forward actor ActorB (id=14) port = 8000
+12:05:28 INFO  Thread-1 3 Remote:54 - waiting to accept connection on port 8000
+12:05:28 INFO  Thread-0 9 ActorB$:45 - got task = Task(192.168.1.140:0,testing 1-2-3,14,0)
+12:05:28 INFO  Thread-0 10 ActorB$:57 - got testing 1-2-3
+12:06:45 INFO  Thread-1 77284 Remote:57 - got connection from 192.168.1.108
+12:06:45 INFO  Thread-1 77286 Remote:54 - waiting to accept connection on port 8000
+12:06:45 INFO  Thread-2 77286 Ice:40 - ice started (id=17)
+12:06:45 INFO  Thread-2 77313 Ice:48 - received inbound message = Task(192.168.1.108:8004,Y(hello there from ActorA (id=10)),10,0)
+12:06:45 INFO  Thread-2 77313 Ice:49 - actor handler = ActorB (id=14)
+12:06:45 INFO  Thread-2 77316 Ice:53 - successfully relayed Task(192.168.1.108:8004,Y(hello there from ActorA (id=10)),10,0)
+12:06:45 INFO  Thread-0 77316 ActorB$:45 - got task = Task(192.168.1.108:8004,Y(hello there from ActorA (id=10)),10,0)
+12:06:45 INFO  Thread-0 77317 ActorB$:51 - payload is Y = hello there from ActorA (id=10)

@@ -1,0 +1,4 @@
+11:40:46 INFO  Thread-1 0 Remote:50 - remote daemon id = 12 for call-forward actor ActorB (id=10) port = 9000
+11:40:46 INFO  Thread-1 6 Remote:54 - waiting to accept connection on port 9000
+11:40:46 INFO  Thread-0 11 ActorB$:45 - got task = Task(192.168.1.108:0,testing 1-2-3,10,0)
+11:40:46 INFO  Thread-0 12 ActorB$:57 - got testing 1-2-3
