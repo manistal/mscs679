@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="75c59acf-0077-494b-9112-952b5afa540b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1XYEKMKgkWIB39qRt6IHaczXLn9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Application.PerfectDispatcher">
+    <configuration name="ActorA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign1.ActorA" />
+      <module name="679-project" />
+      <option name="VM_PARAMETERS" value="-Dremote=192.168.1.140:8000" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActorB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign1.ActorB" />
+      <module name="679-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PerfectDispatcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign2.PerfectDispatcher" />
+      <module name="679-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PerfectWorker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign2.PerfectWorker" />
+      <module name="679-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ActorA" />
+      <item itemvalue="Application.ActorB" />
+      <item itemvalue="Application.PerfectWorker" />
+      <item itemvalue="Application.PerfectDispatcher" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PerfectDispatcher" />
+        <item itemvalue="Application.PerfectWorker" />
+        <item itemvalue="Application.ActorA" />
+        <item itemvalue="Application.ActorB" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75c59acf-0077-494b-9112-952b5afa540b" name="Default Changelist" comment="" />
+      <created>1581214563023</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581214563023</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581267991223">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="424" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.180.1440.900/0.23.1920.1057@0.23.1920.1057" timestamp="1581267991223" />
+    <state x="668" y="167" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1581262050730">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="668" y="167" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/-1440.180.1440.900/0.23.1920.1057@0.23.1920.1057" timestamp="1581262050730" />
+    <state x="698" y="324" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1581262992153">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="698" y="324" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/-1440.180.1440.900/0.23.1920.1057@0.23.1920.1057" timestamp="1581262992153" />
+    <state width="1858" height="627" key="GridCell.Tab.0.bottom" timestamp="1585347115402">
+      <screen x="1440" y="-1260" width="3840" height="2160" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom/-1440.180.1440.900/0.23.1920.1057@0.23.1920.1057" timestamp="1581274720845" />
+    <state width="1858" height="627" key="GridCell.Tab.0.bottom/0.23.1440.877/5280.-145.1920.1080/1440.-1260.3840.2160@1440.-1260.3840.2160" timestamp="1585347115402" />
+    <state width="1858" height="627" key="GridCell.Tab.0.center" timestamp="1585347115401">
+      <screen x="1440" y="-1260" width="3840" height="2160" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.center/-1440.180.1440.900/0.23.1920.1057@0.23.1920.1057" timestamp="1581274720843" />
+    <state width="1858" height="627" key="GridCell.Tab.0.center/0.23.1440.877/5280.-145.1920.1080/1440.-1260.3840.2160@1440.-1260.3840.2160" timestamp="1585347115401" />
+    <state width="1858" height="627" key="GridCell.Tab.0.left" timestamp="1585347115400">
+      <screen x="1440" y="-1260" width="3840" height="2160" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.left/-1440.180.1440.900/0.23.1920.1057@0.23.1920.1057" timestamp="1581274720843" />
+    <state width="1858" height="627" key="GridCell.Tab.0.left/0.23.1440.877/5280.-145.1920.1080/1440.-1260.3840.2160@1440.-1260.3840.2160" timestamp="1585347115400" />
+    <state width="1858" height="627" key="GridCell.Tab.0.right" timestamp="1585347115402">
+      <screen x="1440" y="-1260" width="3840" height="2160" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.right/-1440.180.1440.900/0.23.1920.1057@0.23.1920.1057" timestamp="1581274720844" />
+    <state width="1858" height="627" key="GridCell.Tab.0.right/0.23.1440.877/5280.-145.1920.1080/1440.-1260.3840.2160@1440.-1260.3840.2160" timestamp="1585347115402" />
+    <state x="448" y="133" key="SettingsEditor" timestamp="1581266382966">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="448" y="133" key="SettingsEditor/-1440.180.1440.900/0.23.1920.1057@0.23.1920.1057" timestamp="1581266382966" />
+    <state x="672" y="452" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1581266221100">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="672" y="452" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/-1440.180.1440.900/0.23.1920.1057@0.23.1920.1057" timestamp="1581266221100" />
+  </component>
+</project>

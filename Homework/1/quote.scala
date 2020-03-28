@@ -1,0 +1,1 @@
+val quote = "If a cat can kill a rat in a minute, how long would it be killing 60,000 rats? Ah, how long indeed! My personal opinion is that the rats would kill the cat. ~Lewis Carroll, on the advantages of parallelism"

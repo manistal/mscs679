@@ -1,0 +1,176 @@
+Miguel Nistal
+Miguel.Nistal1@marist.edu
+Lab 8, MSCS679
+
+
+
+# 1. Let's start. A MongoDB database is made up of ​collections​. You can think of ​collections​ astables​ from relational databases. Let's ask the database, identified by the ​db​ object, to list allof its collections. It's easy, just enter: ​db.getCollectionNames( )​;
+
+> db.getCollectionNames();
+[ "unicorns" ]
+
+
+
+# 2. Can you guess how to retrieve a ​count​ of ​unicorns​?
+
+> db.unicorns.count();
+12
+
+
+
+# 3. If you are going to work with unicorns, you have to get to know them. Use the ​find​ commandto retrieve the information on our ​unicorns​.
+
+> db.unicorns.find({});
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a335e"), "name" : "Horny", "dob" : ISODate("1992-03-13T12:47:00Z"), "loves" : [ "carrot", "papaya" ], "weight" : 600, "gender" : "m", "vampires" : 63 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a335f"), "name" : "Aurora", "dob" : ISODate("1991-01-24T18:00:00Z"), "loves" : [ "carrot", "grape" ], "weight" : 450, "gender" : "f", "vampires" : 43 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3360"), "name" : "Unicrom", "dob" : ISODate("1973-02-10T03:10:00Z"), "loves" : [ "energon", "redbull" ], "weight" : 984, "gender" : "m", "vampires" : 182 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3361"), "name" : "Roooooodles", "dob" : ISODate("1979-08-18T22:44:00Z"), "loves" : [ "apple" ], "weight" : 575, "gender" : "m", "vampires" : 99 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3362"), "name" : "Solnara", "dob" : ISODate("1985-07-04T06:01:00Z"), "loves" : [ "apple", "carrot", "chocolate" ], "weight" : 550, "gender" : "f", "vampires" : 80 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3363"), "name" : "Ayna", "dob" : ISODate("1998-03-07T13:30:00Z"), "loves" : [ "strawberry", "lemon" ], "weight" : 733, "gender" : "f", "vampires" : 40 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3364"), "name" : "Kenny", "dob" : ISODate("1997-07-01T14:42:00Z"), "loves" : [ "grape", "lemon" ], "weight" : 690, "gender" : "m", "vampires" : 39 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3365"), "name" : "Raleigh", "dob" : ISODate("2005-05-03T04:57:00Z"), "loves" : [ "apple", "sugar" ], "weight" : 421, "gender" : "m", "vampires" : 2 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3366"), "name" : "Leia", "dob" : ISODate("2001-10-08T18:53:00Z"), "loves" : [ "apple", "watermelon" ], "weight" : 601, "gender" : "f", "vampires" : 33 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3367"), "name" : "Pilot", "dob" : ISODate("1997-03-01T10:03:00Z"), "loves" : [ "apple", "watermelon" ], "weight" : 650, "gender" : "m", "vampires" : 54 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3368"), "name" : "Nimue", "dob" : ISODate("1999-12-20T21:15:00Z"), "loves" : [ "grape", "carrot" ], "weight" : 540, "gender" : "f" }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3369"), "name" : "Dunx", "dob" : ISODate("1976-07-18T22:18:00Z"), "loves" : [ "grape", "watermelon" ], "weight" : 704, "gender" : "m", "vampires" : 165 }
+
+
+
+# 4. We can filter our results by specifying a ​selector​ as the first parameter to find". A selector isa JSON object. If we wanted to find a unicorn named 'Pilot', we'd specify ​{name:“Pilot”}​. Try it.
+
+> db.unicorns.find({ name: "Pilot"});
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3367"), "name" : "Pilot", "dob" : ISODate("1997-03-01T10:03:00Z"), "loves" : [ "apple", "watermelon" ], "weight" : 650, "gender" : "m", "vampires" : 54 }
+
+
+
+# 5. Can you find all female unicorns?
+
+> db.unicorns.find({gender: "f"});
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a335f"), "name" : "Aurora", "dob" : ISODate("1991-01-24T18:00:00Z"), "loves" : [ "carrot", "grape" ], "weight" : 450, "gender" : "f", "vampires" : 43 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3362"), "name" : "Solnara", "dob" : ISODate("1985-07-04T06:01:00Z"), "loves" : [ "apple", "carrot", "chocolate" ], "weight" : 550, "gender" : "f", "vampires" : 80 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3363"), "name" : "Ayna", "dob" : ISODate("1998-03-07T13:30:00Z"), "loves" : [ "strawberry", "lemon" ], "weight" : 733, "gender" : "f", "vampires" : 40 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3366"), "name" : "Leia", "dob" : ISODate("2001-10-08T18:53:00Z"), "loves" : [ "apple", "watermelon" ], "weight" : 601, "gender" : "f", "vampires" : 33 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3368"), "name" : "Nimue", "dob" : ISODate("1999-12-20T21:15:00Z"), "loves" : [ "grape", "carrot" ], "weight" : 540, "gender" : "f" }
+
+
+
+# 6.  This is a tricky one but...can you find all male unicorns that weigh over 600 lbs?
+
+> db.unicorns.find({gender: "m", weight: {$gt: 600}});
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3360"), "name" : "Unicrom", "dob" : ISODate("1973-02-10T03:10:00Z"), "loves" : [ "energon", "redbull" ], "weight" : 984, "gender" : "m", "vampires" : 182 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3364"), "name" : "Kenny", "dob" : ISODate("1997-07-01T14:42:00Z"), "loves" : [ "grape", "lemon" ], "weight" : 690, "gender" : "m", "vampires" : 39 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3367"), "name" : "Pilot", "dob" : ISODate("1997-03-01T10:03:00Z"), "loves" : [ "apple", "watermelon" ], "weight" : 650, "gender" : "m", "vampires" : 54 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3369"), "name" : "Dunx", "dob" : ISODate("1976-07-18T22:18:00Z"), "loves" : [ "grape", "watermelon" ], "weight" : 704, "gender" : "m", "vampires" : 165 }
+
+
+
+# 7.  Go ahead and try, ​find​ all unicorn ​names​ and ​weights​ using ​{}​ or ​null​ as the firstparameter.
+
+> db.unicorns.find({}, {name: 1, weight: 1});
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a335e"), "name" : "Horny", "weight" : 600 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a335f"), "name" : "Aurora", "weight" : 450 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3360"), "name" : "Unicrom", "weight" : 984 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3361"), "name" : "Roooooodles", "weight" : 575 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3362"), "name" : "Solnara", "weight" : 550 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3363"), "name" : "Ayna", "weight" : 733 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3364"), "name" : "Kenny", "weight" : 690 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3365"), "name" : "Raleigh", "weight" : 421 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3366"), "name" : "Leia", "weight" : 601 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3367"), "name" : "Pilot", "weight" : 650 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3368"), "name" : "Nimue", "weight" : 540 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3369"), "name" : "Dunx", "weight" : 704 }
+
+
+
+# 8. Here's a tricky one: get only the names of the 2nd and 3rd heaviest male unicorns.
+
+> db.unicorns.find({gender: "m"}).sort({weight: -1}).skip(1).limit(2);
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3369"), "name" : "Dunx", "dob" : ISODate("1976-07-18T22:18:00Z"), "loves" : [ "grape", "watermelon" ], "weight" : 704, "gender" : "m", "vampires" : 165 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3364"), "name" : "Kenny", "dob" : ISODate("1997-07-01T14:42:00Z"), "loves" : [ "grape", "lemon" ], "weight" : 690, "gender" : "m", "vampires" : 39 }
+
+
+
+# 9. The ​selector​ parameter that you pass to ​find​ can be used in a number of places. For example,we can use it with ​count​"]. How many unicorns weigh less than 600 lbs?
+
+> db.unicorns.count({ weight: {$lt: 600} });
+5
+
+
+
+# 10. The ​insert​ command is used to add new documents to a collection. It takesa single argument: the JSON object we want to insert. Go ahead and try it.
+
+> db.unicorns.insert({name: "Lois", gender: "f", vampires: 0});
+WriteResult({ "nInserted" : 1 })
+> db.unicorns.find({name: "Lois"})
+{ "_id" : ObjectId("5e6c06ffb0d108e044cac02b"), "name" : "Lois", "gender" : "f", "vampires" : 0 }
+
+
+
+# 11.  On yoursystem it will be different. For our second argument we'll simply try setting ​{weight:55}​. Go ahead and try.
+
+> db.unicorns.update({_id: ObjectId("5e6c06ffb0d108e044cac02b")}, {weight: 55})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.unicorns.find({_id: ObjectId("5e6c06ffb0d108e044cac02b")})
+{ "_id" : ObjectId("5e6c06ffb0d108e044cac02b"), "weight" : 55 }
+
+
+
+# 12.  Let's fix ourmistake by doing another update and using ​$set​ for the removed fields. 
+
+> db.unicorns.update({_id: ObjectId("5e6c06ffb0d108e044cac02b")}, {$set: {name: 'Lois', vampires: 0, gender: "f"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.unicorns.find({_id: ObjectId("5e6c06ffb0d108e044cac02b")})
+{ "_id" : ObjectId("5e6c06ffb0d108e044cac02b"), "weight" : 55, "gender" : "f", "name" : "Lois", "vampires" : 0 }
+
+
+
+# 13. Do an ​update​ with a selector of ​{name: 'Ulysee'}​ a value of{$inc: {vampires: 1}}​ and the 3rd parameter (upsert) set to ​true​.
+
+> db.unicorns.update({name: "Ulysee"}, {$inc: {vampires: 1}}, true); 
+WriteResult({
+	"nMatched" : 0,
+	"nUpserted" : 1,
+	"nModified" : 0,
+	"_id" : ObjectId("5e6c0a409524f32880b993c0")
+})
+> db.unicorns.find({name: "Ulysee"})
+{ "_id" : ObjectId("5e6c0a409524f32880b993c0"), "name" : "Ulysee", "vampires" : 1 }
+
+
+
+# 14. Let's try it by using the ​$push​ operator toadd ​orange​ as a food all ​male​ unicorns love.
+
+> db.unicorns.update({gender: "m"}, { $push: { loves: "orange" } }, true, true) 
+WriteResult({ "nMatched" : 7, "nUpserted" : 0, "nModified" : 7 })
+> db.unicorns.find({gender: "m"})
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a335e"), "name" : "Horny", "dob" : ISODate("1992-03-13T12:47:00Z"), "loves" : [ "carrot", "papaya", "orange" ], "weight" : 600, "gender" : "m", "vampires" : 63 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3360"), "name" : "Unicrom", "dob" : ISODate("1973-02-10T03:10:00Z"), "loves" : [ "energon", "redbull", "orange" ], "weight" : 984, "gender" : "m", "vampires" : 182 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3361"), "name" : "Roooooodles", "dob" : ISODate("1979-08-18T22:44:00Z"), "loves" : [ "apple", "orange" ], "weight" : 575, "gender" : "m", "vampires" : 99 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3364"), "name" : "Kenny", "dob" : ISODate("1997-07-01T14:42:00Z"), "loves" : [ "grape", "lemon", "orange" ], "weight" : 690, "gender" : "m", "vampires" : 39 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3365"), "name" : "Raleigh", "dob" : ISODate("2005-05-03T04:57:00Z"), "loves" : [ "apple", "sugar", "orange" ], "weight" : 421, "gender" : "m", "vampires" : 2 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3367"), "name" : "Pilot", "dob" : ISODate("1997-03-01T10:03:00Z"), "loves" : [ "apple", "watermelon", "orange" ], "weight" : 650, "gender" : "m", "vampires" : 54 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3369"), "name" : "Dunx", "dob" : ISODate("1976-07-18T22:18:00Z"), "loves" : [ "grape", "watermelon", "orange" ], "weight" : 704, "gender" : "m", "vampires" : 165 }
+
+
+
+# 15. Go ahead and remove whichever unicorn you want.
+
+> db.unicorns.find({gender: "m"})
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a335e"), "name" : "Horny", "dob" : ISODate("1992-03-13T12:47:00Z"), "loves" : [ "carrot", "papaya", "orange" ], "weight" : 600, "gender" : "m", "vampires" : 63 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3360"), "name" : "Unicrom", "dob" : ISODate("1973-02-10T03:10:00Z"), "loves" : [ "energon", "redbull", "orange" ], "weight" : 984, "gender" : "m", "vampires" : 182 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3361"), "name" : "Roooooodles", "dob" : ISODate("1979-08-18T22:44:00Z"), "loves" : [ "apple", "orange" ], "weight" : 575, "gender" : "m", "vampires" : 99 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3364"), "name" : "Kenny", "dob" : ISODate("1997-07-01T14:42:00Z"), "loves" : [ "grape", "lemon", "orange" ], "weight" : 690, "gender" : "m", "vampires" : 39 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3365"), "name" : "Raleigh", "dob" : ISODate("2005-05-03T04:57:00Z"), "loves" : [ "apple", "sugar", "orange" ], "weight" : 421, "gender" : "m", "vampires" : 2 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3367"), "name" : "Pilot", "dob" : ISODate("1997-03-01T10:03:00Z"), "loves" : [ "apple", "watermelon", "orange" ], "weight" : 650, "gender" : "m", "vampires" : 54 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3369"), "name" : "Dunx", "dob" : ISODate("1976-07-18T22:18:00Z"), "loves" : [ "grape", "watermelon", "orange" ], "weight" : 704, "gender" : "m", "vampires" : 165 }
+
+> db.unicorns.remove({name: "Raleigh"}) 
+WriteResult({ "nRemoved" : 1 })
+
+> db.unicorns.find({gender: "m"})
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a335e"), "name" : "Horny", "dob" : ISODate("1992-03-13T12:47:00Z"), "loves" : [ "carrot", "papaya", "orange" ], "weight" : 600, "gender" : "m", "vampires" : 63 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3360"), "name" : "Unicrom", "dob" : ISODate("1973-02-10T03:10:00Z"), "loves" : [ "energon", "redbull", "orange" ], "weight" : 984, "gender" : "m", "vampires" : 182 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3361"), "name" : "Roooooodles", "dob" : ISODate("1979-08-18T22:44:00Z"), "loves" : [ "apple", "orange" ], "weight" : 575, "gender" : "m", "vampires" : 99 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3364"), "name" : "Kenny", "dob" : ISODate("1997-07-01T14:42:00Z"), "loves" : [ "grape", "lemon", "orange" ], "weight" : 690, "gender" : "m", "vampires" : 39 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3367"), "name" : "Pilot", "dob" : ISODate("1997-03-01T10:03:00Z"), "loves" : [ "apple", "watermelon", "orange" ], "weight" : 650, "gender" : "m", "vampires" : 54 }
+{ "_id" : ObjectId("5e6bec3fc4e668875a8a3369"), "name" : "Dunx", "dob" : ISODate("1976-07-18T22:18:00Z"), "loves" : [ "grape", "watermelon", "orange" ], "weight" : 704, "gender" : "m", "vampires" : 165 }

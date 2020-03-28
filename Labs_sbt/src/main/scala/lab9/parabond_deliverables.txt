@@ -1,0 +1,101 @@
+Miguel Nistal
+Miguel.Nistal1@marist.edu
+Lab 9, MSCS679
+
+I.3a) Find the statement that creates the standard collection
+
+73    // Build the portfolio list    
+74    val portfIds = for(i <- 0 until n) yield Job(ran.nextInt(100000)+1,null,null)
+
+
+I.3b) Find the statement that converts the standard collection to a parallel collection
+
+79    val results = portfIds.par.map(price)
+
+
+I.3c) Describe how the algorithm uses parallelism
+
+The algorithm applies the 'price()' function across the parallel collection with 'map()'. Each portfolio is priced in parallel, while the contents of the portfolio are evaluated serially with the 'foldLeft()' call. 
+
+
+II.3a) Can you interpret the specs of this bond?
+
+{
+	"_id" : ObjectId("5e793bd399f49ff78b271e9f"),
+	"id" : 1,
+	"coupon" : 1,
+	"freq" : 1,
+	"tenor" : 10,
+	"maturity" : 1000
+}
+
+'id':
+Identifier for the bond 
+
+'coupon': 
+Number of cashflows for the bond, payable at some frequency, in this case 1
+
+'freq': 
+Frequency of payments per year that the bond generates, in this case once
+
+'tenor': 
+Time to maturity, the number of iterations of 'freq' paid out before the bond endures. In this case 10 years (tenor * freq). 
+
+'maturity': 
+Face value of the bond, one time cash flow of the bond at maturity, in this case, 1000$
+
+
+II.3b) Write a command to get bond mnumber 2503
+
+> db.Bonds.find({"id": 2503})
+{ 
+    "_id" : ObjectId("5e793bd599f49ff78b272865"), 
+    "id" : 2503, 
+    "coupon" : 20, 
+    "freq" : 52, 
+    "tenor" : 1, 
+    "maturity" : 1000 
+}
+
+
+i) How Frequently does this bond pay a coupon?
+
+Once a week (52 times per year) ( 'freq': 52 )
+
+
+ii) When is this bond due?
+
+1 year ('tenor': 1)
+
+
+iii) How many cash flows are there in total:
+
+1041 Cash Flows (T*n + 1)
+20 Coupons are paid out 52 times each, with one final payment for the face value. 
+
+
+II.4) Get portfolio 32075
+
+> db.Portfolios.find({"id": 32075})
+{ 
+    "_id" : ObjectId("5e793bea99f49ff78b27af71"), 
+    "id" : 32075, 
+    "instruments" : [ 
+        843, 1740, 3918, 4018, 4012, 2778, 4757, 5000, 1708, 4616, 2956, 1992, 1313, 1019, 1636, 4743, 1526, 1518, 598, 1555 
+    ] 
+}
+
+II.4a) How many bonds or instruments are in this portfolio?
+
+20 bonds
+
+II.4b) What are the bond IDs?
+
+    "instruments" : [ 
+        843, 1740, 3918, 4018, 4012, 2778, 4757, 5000, 1708, 4616, 2956, 1992, 1313, 1019, 1636, 4743, 1526, 1518, 598, 1555 
+    ] 
+
+II.4c) Does this portfolio have a price?
+
+A price can be calculated for this portfolio, but there is not yet a price attribute for this portfolio database object. 
+
