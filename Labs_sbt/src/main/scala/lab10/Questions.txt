@@ -1,0 +1,15 @@
+Background) How does Par00 calculate T1 if it isn't serial?
+
+The 'price()' function is applied to the parallel map collection, but inside the price function, you can see t0 and t1 measured and returned. The Par00 code sums the time measured in each iteration and sums them together to get the total time if they were placed end-to-end serially (T1), while the T0 and T1 that wrap the entire par.map call represent TN. 
+
+IV.2) What general conclusions can you draw about the performance of indexes?
+
+Indexes improve the performance of lookup functions, which are common in code that queries a database like Par00. The performance improvement scales with the number of entries being looked up. In the case of mongo, this goes from O(N) (as if you were iterating through each and every item to find the one you're looking for), to O(log n) because it becomes a binary tree search. Indexes can get even faster when they act as random access with a pre-determined offset, scaling all the way to O(1). 
+
+
+IV.3) You may find that the efficiency drops with the indexed database, how do you account for this?
+
+When you add indexes to the database, every look up (and by proxy each _iteration_) becomes faster. This inherently has a larger impact on T1 than it does on TN, because the database lookup time is a constant amortized across the number of parallel processes, because each process can be waiting on its own query together, overlapping the query time. As a result T1 improves some factor of N times more than TN, which makes ratio of T1 to TN smaller, and as a result, the speed up, and the efficiency smaller as well.
+
+
+
