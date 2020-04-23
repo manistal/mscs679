@@ -1,14 +1,15 @@
 package assign3
 
-import org.apache.log4j.Logger
-import parascale.actor.last.{Dispatcher, Task}
+import parascale.actor.last.Dispatcher
 import parascale.util._
 import parabond.cluster.{Partition, checkReset, check}
-import parascale.future.perfect.candidates
 import parascale.parabond.casa.MongoHelper
 import parascale.parabond.util.Result
 
 
+/**
+ * Entry point for ParaDispatcher.main()
+ */
 object ParaDispatcher extends App {
   // For initial testing on a single host, use this socket.
   // When deploying on multiple hosts, use the VM argument,
@@ -20,8 +21,18 @@ object ParaDispatcher extends App {
   new ParaDispatcher(List("localhost:8000", socket2))
 }
 
+
+/**
+ * Work dispatcher object for the ParaBond analysis
+ */
 class ParaDispatcher(sockets: List[String]) extends Dispatcher(sockets) {
 
+  /**
+   * Main processing for a given rung of the ladder
+   *  Partitions the portfolio IDs, sends to workers, and accumulates results
+   * @param rung Int representing set of portfolios
+   * @return  String value designed to be printed as part of the report
+   */
   def analyzeAndReport(rung: Int): String = {
     val start_time = System.nanoTime()
 
@@ -32,6 +43,7 @@ class ParaDispatcher(sockets: List[String]) extends Dispatcher(sockets) {
     // and send partitions to workers 0 and 1 respectively
     workers(0) ! Partition(rung/2, 0)
     workers(1) ! Partition(rung/2, rung/2)
+    println("*** Sent Workers for Rung " + rung)
 
     // Wait for results
     // Accumulate the responses from the workers
@@ -45,7 +57,9 @@ class ParaDispatcher(sockets: List[String]) extends Dispatcher(sockets) {
       partial_result
     }
 
-    // Reduce the partial sums to a total for the determination of perfectness
+    // Reduce the partial results to a final number
+    //  Combining t0 and t1 and then subtracting the totals
+    //  always results in the total difference
     val result = results.reduce { (a, b) =>
       Result(
         a.t0 + b.t0,
@@ -56,6 +70,9 @@ class ParaDispatcher(sockets: List[String]) extends Dispatcher(sockets) {
     val end_time = System.nanoTime()
 
     // Generate the report row for this rung
+    //  String formatted to go with header coded in calling function
+    //  TODO: This would be better implemented as a data structure return
+    //         so that string formatting is all done in once piece of code
     val missed_portfIds = check(portfIds).length
     val T1 = (result.t1 - result.t0) / 1000000000.0
     val TN = (end_time - start_time) / 1000000000.0
@@ -64,12 +81,16 @@ class ParaDispatcher(sockets: List[String]) extends Dispatcher(sockets) {
     f"$rung%-5s $missed_portfIds%6s $T1%7.2f $TN%8.2f $R%6.2f $e%6.2f"
   }
 
+  /**
+   * Overloaded 'act()' function from Base Class Dispatcher
+   *   Entry point for execution of Actor
+   */
   def act: Unit = {
     // Constants implemented as part of construction, used in reporting
     val workers_info = sockets.foldLeft("") { (result_str, entry) => result_str + entry + "(worker), " }
     val mongo_info = MongoHelper.getHost + " (mongo)"
-    val ladder = List(1000, 2000, 4000, 8000, 16000, 32000)
-    /*val ladder = List(1000, 2000, 4000, 8000, 16000, 32000, 64000, 100000 )*/
+    //val ladder = List(1000, 2000, 4000, 8000, 16000, 32000)
+    val ladder = List(1000, 2000, 4000, 8000, 16000, 32000, 64000, 100000)
 
     // Main Dispatcher Loop
     //  For each rung described in the ladder, analyze and report the results
@@ -78,11 +99,12 @@ class ParaDispatcher(sockets: List[String]) extends Dispatcher(sockets) {
     }
 
     // Generate a report for the Results
+    // TODO: Should log to a report.txt file rather than STDOUT
     println("")
     println("ParaBond Analysis")
     println("By Miguel Nistal")
     println("20 Apr 2020")
-    println("BasicNode")
+    println("MemoryBoundNode")
     println("Workers: " + sockets.length)
     println("Hosts: localhost (dispatcher), " + workers_info + mongo_info)
     println("Cores: " + Runtime.getRuntime.availableProcessors)

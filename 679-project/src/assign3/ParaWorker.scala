@@ -1,11 +1,14 @@
 package assign3
 
 import parascale.actor.last.Worker
-import parascale.actor.last.{Dispatcher, Task}
 import parascale.util._
-import parabond.cluster.{Partition, checkReset}
+import parabond.cluster.Partition
 import parascale.parabond.util.Result
 
+
+/**
+ * Entrypoint for ParaWorker.main()
+ */
 object ParaWorker extends App {
   // a. If worker running on a single host, spawn two workers
   //   else spawn one worker.
@@ -31,26 +34,40 @@ object ParaWorker extends App {
   // will contain one port per host.
   for (port <- ports) {
     // Start up new worker.
+    println(port)
     new ParaWorker(port)
   }
 }
 
+
+/**
+ * Worker class for the ParaBond Portfolio Analysis
+ * @param port Port for the worker to listen on
+ */
 class ParaWorker(port: Int) extends Worker(port) {
   import ParaWorker._
+
   /**
    * Handles actor startup after construction.
    */
   override def act: Unit = {
-    val name = getClass.getSimpleName
-
     // Action loop, waiting for messages from Dispatcher
     //   TODO: Needs a break condition or handler, infinite loops are bad
     while (true) {
       receive.payload match {
+        // Payload is a Partition case class sent from the dispatcher
+        //   Analyze the partition using the Node object and then
+        //   accumulate time measurements to return to the dispatcher
+        //   NOTE: analyze updates the mongoDB as a _side effect_
         case partition: Partition =>
           val analysis = node analyze(partition)
           val dt = analysis.results.foldLeft(0L) { (sum, job) => sum + (job.result.t1 - job.result.t0) }
+          println("Sending Result " + Result(dt))
+          println("Of analysis " + analysis)
           sender ! Result(dt)
+
+        // Always throw for an illegal state, especially in loop
+        case _ => throw new IllegalStateException()
       }
     }
   }
