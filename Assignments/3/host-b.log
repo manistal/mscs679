@@ -1,0 +1,328 @@
+15:51:34 INFO  Thread-1 0 Remote:50 - remote daemon id = 15 for call-forward actor ParaWorker (id=14) port = 9000
+15:51:34 INFO  Thread-1 4 Remote:54 - waiting to accept connection on port 9000
+15:52:05 INFO  Thread-1 30968 Remote:57 - got connection from 192.168.1.108
+15:52:05 INFO  Thread-1 30970 Remote:54 - waiting to accept connection on port 9000
+15:52:05 INFO  Thread-2 30970 Ice:40 - ice started (id=17)
+15:52:05 INFO  Thread-2 30994 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+15:52:05 INFO  Thread-2 30994 Ice:49 - actor handler = ParaWorker (id=14)
+15:52:05 INFO  Thread-2 30996 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+15:56:15 INFO  Thread-1 280865 Remote:57 - got connection from 192.168.1.108
+15:56:15 INFO  Thread-1 280866 Remote:54 - waiting to accept connection on port 9000
+15:56:15 INFO  Thread-3 280866 Ice:40 - ice started (id=35)
+15:56:15 INFO  Thread-3 280868 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),11,0)
+15:56:15 INFO  Thread-3 280868 Ice:49 - actor handler = ParaWorker (id=14)
+15:56:15 INFO  Thread-3 280868 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),11,0)
+15:56:37 INFO  Thread-1 0 Remote:50 - remote daemon id = 15 for call-forward actor ParaWorker (id=14) port = 9000
+15:56:37 INFO  Thread-1 3 Remote:54 - waiting to accept connection on port 9000
+15:56:56 INFO  Thread-1 19161 Remote:57 - got connection from 192.168.1.108
+15:56:56 INFO  Thread-1 19163 Remote:54 - waiting to accept connection on port 9000
+15:56:56 INFO  Thread-2 19163 Ice:40 - ice started (id=17)
+15:56:56 INFO  Thread-2 19183 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),11,0)
+15:56:56 INFO  Thread-2 19184 Ice:49 - actor handler = ParaWorker (id=14)
+15:56:56 INFO  Thread-2 19185 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),11,0)
+16:10:02 INFO  Thread-1 805580 Remote:57 - got connection from 192.168.1.108
+16:10:02 INFO  Thread-1 805581 Remote:54 - waiting to accept connection on port 9000
+16:10:02 INFO  Thread-3 805581 Ice:40 - ice started (id=35)
+16:10:02 INFO  Thread-3 805625 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),11,0)
+16:10:02 INFO  Thread-3 805625 Ice:49 - actor handler = ParaWorker (id=14)
+16:10:02 INFO  Thread-3 805625 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),11,0)
+16:11:41 INFO  Thread-1 904172 Remote:57 - got connection from 192.168.1.108
+16:11:41 INFO  Thread-1 904172 Remote:54 - waiting to accept connection on port 9000
+16:11:41 INFO  Thread-4 904173 Ice:40 - ice started (id=47)
+16:11:41 INFO  Thread-4 904173 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),11,0)
+16:11:41 INFO  Thread-4 904174 Ice:49 - actor handler = ParaWorker (id=14)
+16:11:41 INFO  Thread-4 904174 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),11,0)
+16:30:33 INFO  Thread-1 2036222 Remote:57 - got connection from 192.168.1.108
+16:30:33 INFO  Thread-1 2036223 Remote:54 - waiting to accept connection on port 9000
+16:30:33 INFO  Thread-5 2036224 Ice:40 - ice started (id=48)
+16:30:33 INFO  Thread-5 2036225 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),11,0)
+16:30:33 INFO  Thread-5 2036225 Ice:49 - actor handler = ParaWorker (id=14)
+16:30:33 INFO  Thread-5 2036225 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),11,0)
+16:32:09 INFO  Thread-1 2132271 Remote:57 - got connection from 192.168.1.108
+16:32:09 INFO  Thread-1 2132271 Remote:54 - waiting to accept connection on port 9000
+16:32:09 INFO  Thread-6 2132272 Ice:40 - ice started (id=60)
+16:32:09 INFO  Thread-6 2132273 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),11,0)
+16:32:09 INFO  Thread-6 2132273 Ice:49 - actor handler = ParaWorker (id=14)
+16:32:09 INFO  Thread-6 2132273 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),11,0)
+16:35:13 INFO  Thread-1 2316258 Remote:57 - got connection from 192.168.1.108
+16:35:13 INFO  Thread-1 2316259 Remote:54 - waiting to accept connection on port 9000
+16:35:13 INFO  Thread-7 2316259 Ice:40 - ice started (id=61)
+16:35:13 INFO  Thread-7 2316260 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(2000,2000,0,true,100000),11,0)
+16:35:13 INFO  Thread-7 2316260 Ice:49 - actor handler = ParaWorker (id=14)
+16:35:13 INFO  Thread-7 2316260 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(2000,2000,0,true,100000),11,0)
+16:41:17 INFO  Thread-1 2679729 Remote:57 - got connection from 192.168.1.108
+16:41:17 INFO  Thread-1 2679730 Remote:54 - waiting to accept connection on port 9000
+16:41:17 INFO  Thread-8 2679730 Ice:40 - ice started (id=63)
+16:41:17 INFO  Thread-8 2679731 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(4000,4000,0,true,100000),11,0)
+16:41:17 INFO  Thread-8 2679731 Ice:49 - actor handler = ParaWorker (id=14)
+16:41:17 INFO  Thread-8 2679731 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(4000,4000,0,true,100000),11,0)
+16:53:13 INFO  Thread-1 3396071 Remote:57 - got connection from 192.168.1.108
+16:53:13 INFO  Thread-1 3396072 Remote:54 - waiting to accept connection on port 9000
+16:53:13 INFO  Thread-9 3396072 Ice:40 - ice started (id=67)
+16:53:13 INFO  Thread-9 3396073 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(8000,8000,0,true,100000),11,0)
+16:53:13 INFO  Thread-9 3396073 Ice:49 - actor handler = ParaWorker (id=14)
+16:53:13 INFO  Thread-9 3396073 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(8000,8000,0,true,100000),11,0)
+16:54:09 INFO  Thread-1 3452610 Remote:57 - got connection from 192.168.1.108
+16:54:09 INFO  Thread-1 3452611 Remote:54 - waiting to accept connection on port 9000
+16:54:09 INFO  Thread-10 3452611 Ice:40 - ice started (id=74)
+16:54:09 INFO  Thread-10 3452612 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+16:54:09 INFO  Thread-10 3452613 Ice:49 - actor handler = ParaWorker (id=14)
+16:54:09 INFO  Thread-10 3452613 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+17:05:11 INFO  Thread-1 4113830 Remote:57 - got connection from 192.168.1.108
+17:05:11 INFO  Thread-1 4113831 Remote:54 - waiting to accept connection on port 9000
+17:05:11 INFO  Thread-11 4113831 Ice:40 - ice started (id=77)
+17:05:11 INFO  Thread-11 4113832 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),10,0)
+17:05:11 INFO  Thread-11 4113832 Ice:49 - actor handler = ParaWorker (id=14)
+17:05:11 INFO  Thread-11 4113832 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),10,0)
+18:11:12 INFO  Thread-1 0 Remote:50 - remote daemon id = 15 for call-forward actor ParaWorker (id=14) port = 9000
+18:11:12 INFO  Thread-1 4 Remote:54 - waiting to accept connection on port 9000
+18:11:31 INFO  Thread-1 19405 Remote:57 - got connection from 192.168.1.108
+18:11:31 INFO  Thread-1 19407 Remote:54 - waiting to accept connection on port 9000
+18:11:31 INFO  Thread-2 19407 Ice:40 - ice started (id=17)
+18:11:31 INFO  Thread-2 19426 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+18:11:31 INFO  Thread-2 19427 Ice:49 - actor handler = ParaWorker (id=14)
+18:11:31 INFO  Thread-2 19429 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+23:12:49 INFO  Thread-1 0 Remote:50 - remote daemon id = 15 for call-forward actor ParaWorker (id=14) port = 9000
+23:12:49 INFO  Thread-1 4 Remote:54 - waiting to accept connection on port 9000
+23:13:02 INFO  Thread-1 12601 Remote:57 - got connection from 192.168.1.108
+23:13:02 INFO  Thread-1 12602 Remote:54 - waiting to accept connection on port 9000
+23:13:02 INFO  Thread-2 12602 Ice:40 - ice started (id=17)
+23:13:02 INFO  Thread-2 12616 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+23:13:02 INFO  Thread-2 12616 Ice:49 - actor handler = ParaWorker (id=14)
+23:13:02 INFO  Thread-2 12618 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+09:19:39 INFO  Thread-1 0 Remote:50 - remote daemon id = 15 for call-forward actor ParaWorker (id=14) port = 9000
+09:19:39 INFO  Thread-1 3 Remote:54 - waiting to accept connection on port 9000
+09:19:45 INFO  Thread-1 5899 Remote:57 - got connection from 192.168.1.108
+09:19:45 INFO  Thread-1 5900 Remote:54 - waiting to accept connection on port 9000
+09:19:45 INFO  Thread-2 5901 Ice:40 - ice started (id=17)
+09:19:45 INFO  Thread-2 5917 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+09:19:45 INFO  Thread-2 5918 Ice:49 - actor handler = ParaWorker (id=14)
+09:19:45 INFO  Thread-2 5919 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+09:40:56 INFO  Thread-1 1276995 Remote:57 - got connection from 192.168.1.108
+09:40:56 INFO  Thread-1 1276996 Remote:54 - waiting to accept connection on port 9000
+09:40:56 INFO  Thread-3 1276996 Ice:40 - ice started (id=35)
+09:40:56 INFO  Thread-3 1276997 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),11,0)
+09:40:56 INFO  Thread-3 1276998 Ice:49 - actor handler = ParaWorker (id=14)
+09:40:56 INFO  Thread-3 1276998 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),11,0)
+12:01:22 INFO  Thread-1 0 Remote:50 - remote daemon id = 15 for call-forward actor ParaWorker (id=14) port = 9000
+12:01:22 INFO  Thread-1 4 Remote:54 - waiting to accept connection on port 9000
+12:01:41 INFO  Thread-1 18877 Remote:57 - got connection from 192.168.1.108
+12:01:41 INFO  Thread-1 18878 Remote:54 - waiting to accept connection on port 9000
+12:01:41 INFO  Thread-2 18878 Ice:40 - ice started (id=17)
+12:01:41 INFO  Thread-2 18895 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),11,0)
+12:01:41 INFO  Thread-2 18895 Ice:49 - actor handler = ParaWorker (id=14)
+12:01:41 INFO  Thread-2 18896 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),11,0)
+12:05:44 INFO  Thread-1 261749 Remote:57 - got connection from 192.168.1.108
+12:05:44 INFO  Thread-1 261750 Remote:54 - waiting to accept connection on port 9000
+12:05:44 INFO  Thread-3 261750 Ice:40 - ice started (id=35)
+12:05:44 INFO  Thread-3 261751 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+12:05:44 INFO  Thread-3 261751 Ice:49 - actor handler = ParaWorker (id=14)
+12:05:44 INFO  Thread-3 261752 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+12:28:52 INFO  Thread-1 0 Remote:50 - remote daemon id = 15 for call-forward actor ParaWorker (id=14) port = 9000
+12:28:52 INFO  Thread-1 3 Remote:54 - waiting to accept connection on port 9000
+12:29:04 INFO  Thread-1 12825 Remote:57 - got connection from 192.168.1.108
+12:29:04 INFO  Thread-1 12827 Remote:54 - waiting to accept connection on port 9000
+12:29:04 INFO  Thread-2 12827 Ice:40 - ice started (id=17)
+12:29:04 INFO  Thread-2 12849 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+12:29:04 INFO  Thread-2 12850 Ice:49 - actor handler = ParaWorker (id=14)
+12:29:04 INFO  Thread-2 12851 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+12:30:35 INFO  Thread-1 103454 Remote:57 - got connection from 192.168.1.108
+12:30:35 INFO  Thread-1 103455 Remote:54 - waiting to accept connection on port 9000
+12:30:35 INFO  Thread-3 103455 Ice:40 - ice started (id=35)
+12:30:35 INFO  Thread-3 103456 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),10,0)
+12:30:35 INFO  Thread-3 103456 Ice:49 - actor handler = ParaWorker (id=14)
+12:30:35 INFO  Thread-3 103456 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),10,0)
+12:34:00 INFO  Thread-1 308444 Remote:57 - got connection from 192.168.1.108
+12:34:00 INFO  Thread-1 308445 Remote:54 - waiting to accept connection on port 9000
+12:34:00 INFO  Thread-4 308445 Ice:40 - ice started (id=36)
+12:34:00 INFO  Thread-4 308446 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(2000,2000,0,true,100000),10,0)
+12:34:00 INFO  Thread-4 308446 Ice:49 - actor handler = ParaWorker (id=14)
+12:34:00 INFO  Thread-4 308446 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(2000,2000,0,true,100000),10,0)
+12:40:13 INFO  Thread-1 681452 Remote:57 - got connection from 192.168.1.108
+12:40:13 INFO  Thread-1 681453 Remote:54 - waiting to accept connection on port 9000
+12:40:13 INFO  Thread-5 681453 Ice:40 - ice started (id=39)
+12:40:13 INFO  Thread-5 681454 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(4000,4000,0,true,100000),10,0)
+12:40:13 INFO  Thread-5 681454 Ice:49 - actor handler = ParaWorker (id=14)
+12:40:13 INFO  Thread-5 681454 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(4000,4000,0,true,100000),10,0)
+12:51:53 INFO  Thread-1 1381258 Remote:57 - got connection from 192.168.1.108
+12:51:53 INFO  Thread-1 1381259 Remote:54 - waiting to accept connection on port 9000
+12:51:53 INFO  Thread-6 1381259 Ice:40 - ice started (id=43)
+12:51:53 INFO  Thread-6 1381260 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(8000,8000,0,true,100000),10,0)
+12:51:53 INFO  Thread-6 1381260 Ice:49 - actor handler = ParaWorker (id=14)
+12:51:53 INFO  Thread-6 1381261 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(8000,8000,0,true,100000),10,0)
+13:15:13 INFO  Thread-1 2781107 Remote:57 - got connection from 192.168.1.108
+13:15:13 INFO  Thread-1 2781108 Remote:54 - waiting to accept connection on port 9000
+13:15:13 INFO  Thread-7 2781108 Ice:40 - ice started (id=50)
+13:15:13 INFO  Thread-7 2781109 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(16000,16000,0,true,100000),10,0)
+13:15:13 INFO  Thread-7 2781109 Ice:49 - actor handler = ParaWorker (id=14)
+13:15:13 INFO  Thread-7 2781110 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(16000,16000,0,true,100000),10,0)
+14:09:18 INFO  Thread-1 6026261 Remote:57 - got connection from 192.168.1.108
+14:09:18 INFO  Thread-1 6026261 Remote:54 - waiting to accept connection on port 9000
+14:09:18 INFO  Thread-8 6026262 Ice:40 - ice started (id=62)
+14:09:18 INFO  Thread-8 6026263 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(32000,32000,0,true,100000),10,0)
+14:09:18 INFO  Thread-8 6026263 Ice:49 - actor handler = ParaWorker (id=14)
+14:09:18 INFO  Thread-8 6026263 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(32000,32000,0,true,100000),10,0)
+15:42:53 INFO  Thread-1 11641931 Remote:57 - got connection from 192.168.1.108
+15:42:53 INFO  Thread-1 11641932 Remote:54 - waiting to accept connection on port 9000
+15:42:53 INFO  Thread-9 11641932 Ice:40 - ice started (id=75)
+15:42:53 INFO  Thread-9 11641933 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(50000,50000,0,true,100000),10,0)
+15:42:53 INFO  Thread-9 11641933 Ice:49 - actor handler = ParaWorker (id=14)
+15:42:53 INFO  Thread-9 11641933 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(50000,50000,0,true,100000),10,0)
+21:15:28 INFO  Thread-1 0 Remote:50 - remote daemon id = 15 for call-forward actor ParaWorker (id=14) port = 9000
+21:15:28 INFO  Thread-1 3 Remote:54 - waiting to accept connection on port 9000
+21:16:16 INFO  Thread-1 47993 Remote:57 - got connection from 192.168.1.108
+21:16:16 INFO  Thread-1 47994 Remote:54 - waiting to accept connection on port 9000
+21:16:16 INFO  Thread-2 47994 Ice:40 - ice started (id=17)
+21:16:16 INFO  Thread-2 48008 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+21:16:16 INFO  Thread-2 48009 Ice:49 - actor handler = ParaWorker (id=14)
+21:16:16 INFO  Thread-2 48010 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+21:17:47 INFO  Thread-1 139065 Remote:57 - got connection from 192.168.1.108
+21:17:47 INFO  Thread-1 139066 Remote:54 - waiting to accept connection on port 9000
+21:17:47 INFO  Thread-3 139066 Ice:40 - ice started (id=35)
+21:17:47 INFO  Thread-3 139067 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),10,0)
+21:17:47 INFO  Thread-3 139067 Ice:49 - actor handler = ParaWorker (id=14)
+21:17:47 INFO  Thread-3 139067 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),10,0)
+21:20:47 INFO  Thread-1 319499 Remote:57 - got connection from 192.168.1.108
+21:20:47 INFO  Thread-1 319499 Remote:54 - waiting to accept connection on port 9000
+21:20:47 INFO  Thread-4 319500 Ice:40 - ice started (id=36)
+21:20:47 INFO  Thread-4 319501 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(2000,2000,0,true,100000),10,0)
+21:20:47 INFO  Thread-4 319501 Ice:49 - actor handler = ParaWorker (id=14)
+21:20:47 INFO  Thread-4 319501 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(2000,2000,0,true,100000),10,0)
+21:26:39 INFO  Thread-1 670665 Remote:57 - got connection from 192.168.1.108
+21:26:39 INFO  Thread-1 670666 Remote:54 - waiting to accept connection on port 9000
+21:26:39 INFO  Thread-5 670666 Ice:40 - ice started (id=38)
+21:26:39 INFO  Thread-5 670667 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(4000,4000,0,true,100000),10,0)
+21:26:39 INFO  Thread-5 670667 Ice:49 - actor handler = ParaWorker (id=14)
+21:26:39 INFO  Thread-5 670667 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(4000,4000,0,true,100000),10,0)
+21:38:14 INFO  Thread-1 1366157 Remote:57 - got connection from 192.168.1.108
+21:38:14 INFO  Thread-1 1366157 Remote:54 - waiting to accept connection on port 9000
+21:38:14 INFO  Thread-6 1366158 Ice:40 - ice started (id=42)
+21:38:14 INFO  Thread-6 1366159 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(8000,8000,0,true,100000),10,0)
+21:38:14 INFO  Thread-6 1366159 Ice:49 - actor handler = ParaWorker (id=14)
+21:38:14 INFO  Thread-6 1366159 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(8000,8000,0,true,100000),10,0)
+22:01:26 INFO  Thread-1 2758387 Remote:57 - got connection from 192.168.1.108
+22:01:26 INFO  Thread-1 2758388 Remote:54 - waiting to accept connection on port 9000
+22:01:26 INFO  Thread-7 2758388 Ice:40 - ice started (id=49)
+22:01:26 INFO  Thread-7 2758389 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(16000,16000,0,true,100000),10,0)
+22:01:26 INFO  Thread-7 2758389 Ice:49 - actor handler = ParaWorker (id=14)
+22:01:26 INFO  Thread-7 2758389 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(16000,16000,0,true,100000),10,0)
+22:48:40 INFO  Thread-1 5592452 Remote:57 - got connection from 192.168.1.108
+22:48:40 INFO  Thread-1 5592453 Remote:54 - waiting to accept connection on port 9000
+22:48:40 INFO  Thread-8 5592453 Ice:40 - ice started (id=61)
+22:48:40 INFO  Thread-8 5592454 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(32000,32000,0,true,100000),10,0)
+22:48:40 INFO  Thread-8 5592454 Ice:49 - actor handler = ParaWorker (id=14)
+22:48:40 INFO  Thread-8 5592454 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(32000,32000,0,true,100000),10,0)
+00:21:29 INFO  Thread-1 11160890 Remote:57 - got connection from 192.168.1.108
+00:21:29 INFO  Thread-1 11160891 Remote:54 - waiting to accept connection on port 9000
+00:21:29 INFO  Thread-9 11160891 Ice:40 - ice started (id=73)
+00:21:29 INFO  Thread-9 11160892 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(50000,50000,0,true,100000),10,0)
+00:21:29 INFO  Thread-9 11160892 Ice:49 - actor handler = ParaWorker (id=14)
+00:21:29 INFO  Thread-9 11160892 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(50000,50000,0,true,100000),10,0)
+12:27:03 INFO  Thread-1 1 Remote:50 - remote daemon id = 15 for call-forward actor ParaWorker (id=14) port = 9000
+12:27:03 INFO  Thread-1 4 Remote:54 - waiting to accept connection on port 9000
+12:27:33 INFO  Thread-1 30638 Remote:57 - got connection from 192.168.1.108
+12:27:33 INFO  Thread-1 30639 Remote:54 - waiting to accept connection on port 9000
+12:27:33 INFO  Thread-2 30639 Ice:40 - ice started (id=17)
+12:27:33 INFO  Thread-2 30655 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+12:27:33 INFO  Thread-2 30655 Ice:49 - actor handler = ParaWorker (id=14)
+12:27:33 INFO  Thread-2 30656 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+12:30:31 INFO  Thread-1 0 Remote:50 - remote daemon id = 15 for call-forward actor ParaWorker (id=14) port = 9000
+12:30:31 INFO  Thread-1 3 Remote:54 - waiting to accept connection on port 9000
+12:30:52 INFO  Thread-1 20978 Remote:57 - got connection from 192.168.1.108
+12:30:52 INFO  Thread-1 20979 Remote:54 - waiting to accept connection on port 9000
+12:30:52 INFO  Thread-2 20980 Ice:40 - ice started (id=17)
+12:30:52 INFO  Thread-2 20995 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+12:30:52 INFO  Thread-2 20995 Ice:49 - actor handler = ParaWorker (id=14)
+12:30:52 INFO  Thread-2 20997 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+12:32:30 INFO  Thread-1 118975 Remote:57 - got connection from 192.168.1.108
+12:32:30 INFO  Thread-1 118975 Remote:54 - waiting to accept connection on port 9000
+12:32:30 INFO  Thread-3 118976 Ice:40 - ice started (id=35)
+12:32:30 INFO  Thread-3 118977 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),10,0)
+12:32:30 INFO  Thread-3 118977 Ice:49 - actor handler = ParaWorker (id=14)
+12:32:30 INFO  Thread-3 118977 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),10,0)
+12:35:39 INFO  Thread-1 308890 Remote:57 - got connection from 192.168.1.108
+12:35:39 INFO  Thread-1 308891 Remote:54 - waiting to accept connection on port 9000
+12:35:39 INFO  Thread-4 308891 Ice:40 - ice started (id=37)
+12:35:39 INFO  Thread-4 308892 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(2000,2000,0,true,100000),10,0)
+12:35:39 INFO  Thread-4 308893 Ice:49 - actor handler = ParaWorker (id=14)
+12:35:39 INFO  Thread-4 308893 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(2000,2000,0,true,100000),10,0)
+12:42:27 INFO  Thread-1 715933 Remote:57 - got connection from 192.168.1.108
+12:42:27 INFO  Thread-1 715934 Remote:54 - waiting to accept connection on port 9000
+12:42:27 INFO  Thread-5 715934 Ice:40 - ice started (id=39)
+12:42:27 INFO  Thread-5 715935 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(4000,4000,0,true,100000),10,0)
+12:42:27 INFO  Thread-5 715935 Ice:49 - actor handler = ParaWorker (id=14)
+12:42:27 INFO  Thread-5 715935 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(4000,4000,0,true,100000),10,0)
+12:55:07 INFO  Thread-1 1476661 Remote:57 - got connection from 192.168.1.108
+12:55:07 INFO  Thread-1 1476661 Remote:54 - waiting to accept connection on port 9000
+12:55:07 INFO  Thread-6 1476662 Ice:40 - ice started (id=44)
+12:55:07 INFO  Thread-6 1476662 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(8000,8000,0,true,100000),10,0)
+12:55:07 INFO  Thread-6 1476663 Ice:49 - actor handler = ParaWorker (id=14)
+12:55:07 INFO  Thread-6 1476663 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(8000,8000,0,true,100000),10,0)
+13:24:43 INFO  Thread-1 3251966 Remote:57 - got connection from 192.168.1.108
+13:24:43 INFO  Thread-1 3251967 Remote:54 - waiting to accept connection on port 9000
+13:24:43 INFO  Thread-7 3251967 Ice:40 - ice started (id=51)
+13:24:43 INFO  Thread-7 3251968 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(16000,16000,0,true,100000),10,0)
+13:24:43 INFO  Thread-7 3251968 Ice:49 - actor handler = ParaWorker (id=14)
+13:24:43 INFO  Thread-7 3251969 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(16000,16000,0,true,100000),10,0)
+14:23:48 INFO  Thread-1 6797922 Remote:57 - got connection from 192.168.1.108
+14:23:48 INFO  Thread-1 6797924 Remote:54 - waiting to accept connection on port 9000
+14:23:48 INFO  Thread-8 6797924 Ice:40 - ice started (id=63)
+14:23:48 INFO  Thread-8 6797925 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(32000,32000,0,true,100000),10,0)
+14:23:48 INFO  Thread-8 6797925 Ice:49 - actor handler = ParaWorker (id=14)
+14:23:48 INFO  Thread-8 6797925 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(32000,32000,0,true,100000),10,0)
+16:41:18 INFO  Thread-1 15047651 Remote:57 - got connection from 192.168.1.108
+16:41:18 INFO  Thread-1 15047651 Remote:54 - waiting to accept connection on port 9000
+16:41:18 INFO  Thread-9 15047651 Ice:40 - ice started (id=76)
+16:41:18 INFO  Thread-9 15047652 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(50000,50000,0,true,100000),10,0)
+16:41:18 INFO  Thread-9 15047653 Ice:49 - actor handler = ParaWorker (id=14)
+16:41:18 INFO  Thread-9 15047653 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(50000,50000,0,true,100000),10,0)
+01:13:40 INFO  Thread-1 0 Remote:50 - remote daemon id = 15 for call-forward actor ParaWorker (id=14) port = 9000
+01:13:40 INFO  Thread-1 5 Remote:54 - waiting to accept connection on port 9000
+01:14:29 INFO  Thread-1 48643 Remote:57 - got connection from 192.168.1.108
+01:14:29 INFO  Thread-1 48645 Remote:54 - waiting to accept connection on port 9000
+01:14:29 INFO  Thread-2 48645 Ice:40 - ice started (id=17)
+01:14:29 INFO  Thread-2 48665 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+01:14:29 INFO  Thread-2 48665 Ice:49 - actor handler = ParaWorker (id=14)
+01:14:29 INFO  Thread-2 48667 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(500,500,0,true,100000),10,0)
+01:16:07 INFO  Thread-1 146669 Remote:57 - got connection from 192.168.1.108
+01:16:07 INFO  Thread-1 146670 Remote:54 - waiting to accept connection on port 9000
+01:16:07 INFO  Thread-3 146670 Ice:40 - ice started (id=35)
+01:16:07 INFO  Thread-3 146671 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),10,0)
+01:16:07 INFO  Thread-3 146672 Ice:49 - actor handler = ParaWorker (id=14)
+01:16:07 INFO  Thread-3 146672 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(1000,1000,0,true,100000),10,0)
+01:19:19 INFO  Thread-1 339062 Remote:57 - got connection from 192.168.1.108
+01:19:19 INFO  Thread-1 339063 Remote:54 - waiting to accept connection on port 9000
+01:19:19 INFO  Thread-4 339063 Ice:40 - ice started (id=36)
+01:19:19 INFO  Thread-4 339064 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(2000,2000,0,true,100000),10,0)
+01:19:19 INFO  Thread-4 339064 Ice:49 - actor handler = ParaWorker (id=14)
+01:19:19 INFO  Thread-4 339064 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(2000,2000,0,true,100000),10,0)
+01:25:40 INFO  Thread-1 720346 Remote:57 - got connection from 192.168.1.108
+01:25:40 INFO  Thread-1 720346 Remote:54 - waiting to accept connection on port 9000
+01:25:40 INFO  Thread-5 720346 Ice:40 - ice started (id=38)
+01:25:40 INFO  Thread-5 720348 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(4000,4000,0,true,100000),10,0)
+01:25:40 INFO  Thread-5 720348 Ice:49 - actor handler = ParaWorker (id=14)
+01:25:40 INFO  Thread-5 720348 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(4000,4000,0,true,100000),10,0)
+01:38:25 INFO  Thread-1 1485304 Remote:57 - got connection from 192.168.1.108
+01:38:25 INFO  Thread-1 1485305 Remote:54 - waiting to accept connection on port 9000
+01:38:25 INFO  Thread-6 1485305 Ice:40 - ice started (id=42)
+01:38:25 INFO  Thread-6 1485309 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(8000,8000,0,true,100000),10,0)
+01:38:25 INFO  Thread-6 1485309 Ice:49 - actor handler = ParaWorker (id=14)
+01:38:25 INFO  Thread-6 1485309 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(8000,8000,0,true,100000),10,0)
+02:03:50 INFO  Thread-1 3010301 Remote:57 - got connection from 192.168.1.108
+02:03:50 INFO  Thread-1 3010302 Remote:54 - waiting to accept connection on port 9000
+02:03:50 INFO  Thread-7 3010302 Ice:40 - ice started (id=50)
+02:03:50 INFO  Thread-7 3010303 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(16000,16000,0,true,100000),10,0)
+02:03:50 INFO  Thread-7 3010303 Ice:49 - actor handler = ParaWorker (id=14)
+02:03:50 INFO  Thread-7 3010304 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(16000,16000,0,true,100000),10,0)
+02:54:42 INFO  Thread-1 6061978 Remote:57 - got connection from 192.168.1.108
+02:54:42 INFO  Thread-1 6061979 Remote:54 - waiting to accept connection on port 9000
+02:54:42 INFO  Thread-8 6061979 Ice:40 - ice started (id=62)
+02:54:42 INFO  Thread-8 6061980 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(32000,32000,0,true,100000),10,0)
+02:54:42 INFO  Thread-8 6061980 Ice:49 - actor handler = ParaWorker (id=14)
+02:54:42 INFO  Thread-8 6061981 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(32000,32000,0,true,100000),10,0)
+04:35:30 INFO  Thread-1 12109715 Remote:57 - got connection from 192.168.1.108
+04:35:30 INFO  Thread-1 12109716 Remote:54 - waiting to accept connection on port 9000
+04:35:30 INFO  Thread-9 12109716 Ice:40 - ice started (id=74)
+04:35:30 INFO  Thread-9 12109718 Ice:48 - received inbound message = Task(192.168.1.108:9005,Partition(50000,50000,0,true,100000),10,0)
+04:35:30 INFO  Thread-9 12109718 Ice:49 - actor handler = ParaWorker (id=14)
+04:35:30 INFO  Thread-9 12109719 Ice:53 - successfully relayed Task(192.168.1.108:9005,Partition(50000,50000,0,true,100000),10,0)
