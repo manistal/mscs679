@@ -1,0 +1,234 @@
+21:20:22 INFO  main 0 PerfectWorker$:16 - started
+21:20:23 INFO  Thread-1 202 Remote:50 - remote daemon id = 11 for call-forward actor PerfectWorker (id=10) port = 8000
+21:20:23 INFO  Thread-1 204 Remote:54 - waiting to accept connection on port 8000
+21:20:23 INFO  Thread-0 485 PerfectWorker$:93 - started PerfectWorker (id=10)
+21:20:32 INFO  main 0 PerfectDispatcher$:14 - started
+21:20:32 INFO  main 177 Relay:57 - relaying all messages to localhost:8000
+21:20:32 INFO  main 225 Relay:62 - listening for replies on 192.168.1.108:8004
+21:20:32 INFO  main 226 Relay:57 - relaying all messages to 192.168.1.140:9000
+21:20:32 INFO  main 226 Relay:62 - listening for replies on 192.168.1.108:9005
+21:20:32 INFO  Thread-0 336 PerfectDispatcher$:87 - sockets to workers = List(localhost:8000, 192.168.1.140)
+21:20:32 INFO  Thread-0 357 Relay:99 - relaying Partition(1,3,6) as Task(192.168.1.108:8004,Partition(1,3,6),10,0)
+21:20:32 INFO  Thread-1 9871 Remote:57 - got connection from 127.0.0.1
+21:20:32 INFO  Thread-1 9872 Remote:54 - waiting to accept connection on port 8000
+21:20:32 INFO  Thread-2 9873 Ice:40 - ice started (id=14)
+21:20:32 INFO  Thread-0 378 Relay:113 - successfully sent Task(192.168.1.108:8004,Partition(1,3,6),10,0) to localhost:8000
+21:20:32 INFO  Thread-0 378 Relay:99 - relaying Partition(4,6,6) as Task(192.168.1.108:9005,Partition(4,6,6),10,0)
+21:20:32 INFO  Thread-0 384 Relay:113 - successfully sent Task(192.168.1.108:9005,Partition(4,6,6),10,0) to 192.168.1.140:9000
+21:20:32 INFO  Thread-2 9903 Ice:48 - received inbound message = Task(192.168.1.108:8004,Partition(1,3,6),10,0)
+21:20:32 INFO  Thread-2 9903 Ice:49 - actor handler = PerfectWorker (id=10)
+21:20:32 INFO  Thread-2 9908 Ice:53 - successfully relayed Task(192.168.1.108:8004,Partition(1,3,6),10,0)
+21:20:32 INFO  Thread-1 532 Relay:69 - relay daemon started id = 11 for callback actor PerfectDispatcher (id=10)
+21:20:32 INFO  Thread-1 535 Relay:73 - waiting to accept reply connection on port = 8004
+21:20:32 INFO  Thread-1 599 Relay:76 - reply connection accepted from host 192.168.1.108
+21:20:32 INFO  Thread-1 602 Relay:73 - waiting to accept reply connection on port = 8004
+21:20:32 INFO  Thread-3 602 Ice:40 - ice started (id=15)
+21:20:33 INFO  Thread-3 616 Ice:48 - received inbound message = Task(192.168.1.108:0,Result(6,649015862662268,649015863492278),-1,1)
+21:20:33 INFO  Thread-3 616 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:33 INFO  Thread-3 619 Ice:53 - successfully relayed Task(192.168.1.108:0,Result(6,649015862662268,649015863492278),-1,1)
+21:20:33 INFO  Thread-2 738 Relay:69 - relay daemon started id = 13 for callback actor PerfectDispatcher (id=10)
+21:20:33 INFO  Thread-2 739 Relay:73 - waiting to accept reply connection on port = 9005
+21:20:34 INFO  Thread-2 1621 Relay:76 - reply connection accepted from host 192.168.1.140
+21:20:34 INFO  Thread-2 1621 Relay:73 - waiting to accept reply connection on port = 9005
+21:20:34 INFO  Thread-4 1621 Ice:40 - ice started (id=16)
+21:20:34 INFO  Thread-4 1625 Ice:48 - received inbound message = Task(192.168.1.140:0,Result(6,873980365040300,873980365979500),-1,1)
+21:20:34 INFO  Thread-4 1626 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:34 INFO  Thread-4 1626 Ice:53 - successfully relayed Task(192.168.1.140:0,Result(6,873980365040300,873980365979500),-1,1)
+21:20:34 INFO  Thread-0 1663 Relay:99 - relaying Partition(1,14,28) as Task(192.168.1.108:8004,Partition(1,14,28),10,0)
+21:20:34 INFO  Thread-1 11175 Remote:57 - got connection from 127.0.0.1
+21:20:34 INFO  Thread-0 1664 Relay:113 - successfully sent Task(192.168.1.108:8004,Partition(1,14,28),10,0) to localhost:8000
+21:20:34 INFO  Thread-1 11175 Remote:54 - waiting to accept connection on port 8000
+21:20:34 INFO  Thread-3 11176 Ice:40 - ice started (id=17)
+21:20:34 INFO  Thread-0 1665 Relay:99 - relaying Partition(15,28,28) as Task(192.168.1.108:9005,Partition(15,28,28),10,0)
+21:20:34 INFO  Thread-3 11177 Ice:48 - received inbound message = Task(192.168.1.108:8004,Partition(1,14,28),10,0)
+21:20:34 INFO  Thread-3 11177 Ice:49 - actor handler = PerfectWorker (id=10)
+21:20:34 INFO  Thread-3 11178 Ice:53 - successfully relayed Task(192.168.1.108:8004,Partition(1,14,28),10,0)
+21:20:34 INFO  Thread-0 1669 Relay:113 - successfully sent Task(192.168.1.108:9005,Partition(15,28,28),10,0) to 192.168.1.140:9000
+21:20:34 INFO  Thread-1 1681 Relay:76 - reply connection accepted from host 192.168.1.108
+21:20:34 INFO  Thread-1 1682 Relay:73 - waiting to accept reply connection on port = 8004
+21:20:34 INFO  Thread-5 1682 Ice:40 - ice started (id=17)
+21:20:34 INFO  Thread-5 1683 Ice:48 - received inbound message = Task(192.168.1.108:0,Result(28,2596067811170911,2596067811188398),-1,1)
+21:20:34 INFO  Thread-5 1684 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:34 INFO  Thread-5 1684 Ice:53 - successfully relayed Task(192.168.1.108:0,Result(28,2596067811170911,2596067811188398),-1,1)
+21:20:34 INFO  Thread-2 1684 Relay:76 - reply connection accepted from host 192.168.1.140
+21:20:34 INFO  Thread-2 1685 Relay:73 - waiting to accept reply connection on port = 9005
+21:20:34 INFO  Thread-6 1685 Ice:40 - ice started (id=18)
+21:20:34 INFO  Thread-6 1686 Ice:48 - received inbound message = Task(192.168.1.140:0,Result(28,5243889084101100,5243889084112000),-1,1)
+21:20:34 INFO  Thread-6 1686 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:34 INFO  Thread-6 1687 Ice:53 - successfully relayed Task(192.168.1.140:0,Result(28,5243889084101100,5243889084112000),-1,1)
+21:20:34 INFO  Thread-0 1687 Relay:99 - relaying Partition(1,248,496) as Task(192.168.1.108:8004,Partition(1,248,496),10,0)
+21:20:34 INFO  Thread-1 11199 Remote:57 - got connection from 127.0.0.1
+21:20:34 INFO  Thread-0 1688 Relay:113 - successfully sent Task(192.168.1.108:8004,Partition(1,248,496),10,0) to localhost:8000
+21:20:34 INFO  Thread-1 11200 Remote:54 - waiting to accept connection on port 8000
+21:20:34 INFO  Thread-4 11200 Ice:40 - ice started (id=20)
+21:20:34 INFO  Thread-0 1689 Relay:99 - relaying Partition(249,496,496) as Task(192.168.1.108:9005,Partition(249,496,496),10,0)
+21:20:34 INFO  Thread-4 11201 Ice:48 - received inbound message = Task(192.168.1.108:8004,Partition(1,248,496),10,0)
+21:20:34 INFO  Thread-4 11201 Ice:49 - actor handler = PerfectWorker (id=10)
+21:20:34 INFO  Thread-4 11202 Ice:53 - successfully relayed Task(192.168.1.108:8004,Partition(1,248,496),10,0)
+21:20:34 INFO  Thread-0 1691 Relay:113 - successfully sent Task(192.168.1.108:9005,Partition(249,496,496),10,0) to 192.168.1.140:9000
+21:20:34 INFO  Thread-1 1696 Relay:76 - reply connection accepted from host 192.168.1.108
+21:20:34 INFO  Thread-1 1697 Relay:73 - waiting to accept reply connection on port = 8004
+21:20:34 INFO  Thread-7 1697 Ice:40 - ice started (id=19)
+21:20:34 INFO  Thread-7 1697 Ice:48 - received inbound message = Task(192.168.1.108:0,Result(496,2596067869248935,2596067869275193),-1,1)
+21:20:34 INFO  Thread-7 1698 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:34 INFO  Thread-7 1698 Ice:53 - successfully relayed Task(192.168.1.108:0,Result(496,2596067869248935,2596067869275193),-1,1)
+21:20:34 INFO  Thread-2 1702 Relay:76 - reply connection accepted from host 192.168.1.140
+21:20:34 INFO  Thread-2 1702 Relay:73 - waiting to accept reply connection on port = 9005
+21:20:34 INFO  Thread-8 1703 Ice:40 - ice started (id=20)
+21:20:34 INFO  Thread-8 1703 Ice:48 - received inbound message = Task(192.168.1.140:0,Result(496,10487778387402900,10487778387431500),-1,1)
+21:20:34 INFO  Thread-8 1704 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:34 INFO  Thread-8 1704 Ice:53 - successfully relayed Task(192.168.1.140:0,Result(496,10487778387402900,10487778387431500),-1,1)
+21:20:34 INFO  Thread-0 1705 Relay:99 - relaying Partition(1,4064,8128) as Task(192.168.1.108:8004,Partition(1,4064,8128),10,0)
+21:20:34 INFO  Thread-1 11217 Remote:57 - got connection from 127.0.0.1
+21:20:34 INFO  Thread-0 1706 Relay:113 - successfully sent Task(192.168.1.108:8004,Partition(1,4064,8128),10,0) to localhost:8000
+21:20:34 INFO  Thread-1 11217 Remote:54 - waiting to accept connection on port 8000
+21:20:34 INFO  Thread-0 1706 Relay:99 - relaying Partition(4065,8128,8128) as Task(192.168.1.108:9005,Partition(4065,8128,8128),10,0)
+21:20:34 INFO  Thread-5 11217 Ice:40 - ice started (id=21)
+21:20:34 INFO  Thread-5 11219 Ice:48 - received inbound message = Task(192.168.1.108:8004,Partition(1,4064,8128),10,0)
+21:20:34 INFO  Thread-5 11219 Ice:49 - actor handler = PerfectWorker (id=10)
+21:20:34 INFO  Thread-5 11219 Ice:53 - successfully relayed Task(192.168.1.108:8004,Partition(1,4064,8128),10,0)
+21:20:34 INFO  Thread-0 1709 Relay:113 - successfully sent Task(192.168.1.108:9005,Partition(4065,8128,8128),10,0) to 192.168.1.140:9000
+21:20:34 INFO  Thread-1 1713 Relay:76 - reply connection accepted from host 192.168.1.108
+21:20:34 INFO  Thread-1 1714 Relay:73 - waiting to accept reply connection on port = 8004
+21:20:34 INFO  Thread-9 1714 Ice:40 - ice started (id=21)
+21:20:34 INFO  Thread-9 1715 Ice:48 - received inbound message = Task(192.168.1.108:0,Result(8128,2596067938865561,2596067939246157),-1,1)
+21:20:34 INFO  Thread-9 1715 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:34 INFO  Thread-9 1715 Ice:53 - successfully relayed Task(192.168.1.108:0,Result(8128,2596067938865561,2596067939246157),-1,1)
+21:20:34 INFO  Thread-2 1721 Relay:76 - reply connection accepted from host 192.168.1.140
+21:20:34 INFO  Thread-2 1721 Relay:73 - waiting to accept reply connection on port = 9005
+21:20:34 INFO  Thread-10 1721 Ice:40 - ice started (id=22)
+21:20:34 INFO  Thread-10 1723 Ice:48 - received inbound message = Task(192.168.1.140:0,Result(8128,10487778594152700,10487778594381200),-1,1)
+21:20:34 INFO  Thread-10 1723 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:34 INFO  Thread-10 1723 Ice:53 - successfully relayed Task(192.168.1.140:0,Result(8128,10487778594152700,10487778594381200),-1,1)
+21:20:34 INFO  Thread-0 1724 Relay:99 - relaying Partition(1,16775168,33550336) as Task(192.168.1.108:8004,Partition(1,16775168,33550336),10,0)
+21:20:34 INFO  Thread-1 11236 Remote:57 - got connection from 127.0.0.1
+21:20:34 INFO  Thread-0 1725 Relay:113 - successfully sent Task(192.168.1.108:8004,Partition(1,16775168,33550336),10,0) to localhost:8000
+21:20:34 INFO  Thread-1 11237 Remote:54 - waiting to accept connection on port 8000
+21:20:34 INFO  Thread-0 1726 Relay:99 - relaying Partition(16775169,33550336,33550336) as Task(192.168.1.108:9005,Partition(16775169,33550336,33550336),10,0)
+21:20:34 INFO  Thread-6 11237 Ice:40 - ice started (id=22)
+21:20:34 INFO  Thread-6 11238 Ice:48 - received inbound message = Task(192.168.1.108:8004,Partition(1,16775168,33550336),10,0)
+21:20:34 INFO  Thread-6 11238 Ice:49 - actor handler = PerfectWorker (id=10)
+21:20:34 INFO  Thread-6 11238 Ice:53 - successfully relayed Task(192.168.1.108:8004,Partition(1,16775168,33550336),10,0)
+21:20:34 INFO  Thread-0 1729 Relay:113 - successfully sent Task(192.168.1.108:9005,Partition(16775169,33550336,33550336),10,0) to 192.168.1.140:9000
+21:20:34 INFO  Thread-2 1774 Relay:76 - reply connection accepted from host 192.168.1.140
+21:20:34 INFO  Thread-2 1774 Relay:73 - waiting to accept reply connection on port = 9005
+21:20:34 INFO  Thread-11 1774 Ice:40 - ice started (id=23)
+21:20:34 INFO  Thread-11 1775 Ice:48 - received inbound message = Task(192.168.1.140:0,Result(33550336,10487778800660200,10487779146266100),-1,1)
+21:20:34 INFO  Thread-11 1775 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:34 INFO  Thread-11 1775 Ice:53 - successfully relayed Task(192.168.1.140:0,Result(33550336,10487778800660200,10487779146266100),-1,1)
+21:20:34 INFO  Thread-1 1825 Relay:76 - reply connection accepted from host 192.168.1.108
+21:20:34 INFO  Thread-1 1826 Relay:73 - waiting to accept reply connection on port = 8004
+21:20:34 INFO  Thread-12 1826 Ice:40 - ice started (id=24)
+21:20:34 INFO  Thread-12 1827 Ice:48 - received inbound message = Task(192.168.1.108:0,Result(33550336,2596068017237246,2596068378227442),-1,1)
+21:20:34 INFO  Thread-12 1827 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:34 INFO  Thread-12 1828 Ice:53 - successfully relayed Task(192.168.1.108:0,Result(33550336,2596068017237246,2596068378227442),-1,1)
+21:20:34 INFO  Thread-0 1828 Relay:99 - relaying Partition(1,16775168,33550337) as Task(192.168.1.108:8004,Partition(1,16775168,33550337),10,0)
+21:20:34 INFO  Thread-1 11340 Remote:57 - got connection from 127.0.0.1
+21:20:34 INFO  Thread-0 1830 Relay:113 - successfully sent Task(192.168.1.108:8004,Partition(1,16775168,33550337),10,0) to localhost:8000
+21:20:34 INFO  Thread-0 1830 Relay:99 - relaying Partition(16775169,33550336,33550337) as Task(192.168.1.108:9005,Partition(16775169,33550336,33550337),10,0)
+21:20:34 INFO  Thread-1 11343 Remote:54 - waiting to accept connection on port 8000
+21:20:34 INFO  Thread-7 11345 Ice:40 - ice started (id=23)
+21:20:34 INFO  Thread-7 11347 Ice:48 - received inbound message = Task(192.168.1.108:8004,Partition(1,16775168,33550337),10,0)
+21:20:34 INFO  Thread-0 1836 Relay:113 - successfully sent Task(192.168.1.108:9005,Partition(16775169,33550336,33550337),10,0) to 192.168.1.140:9000
+21:20:34 INFO  Thread-7 11347 Ice:49 - actor handler = PerfectWorker (id=10)
+21:20:34 INFO  Thread-7 11347 Ice:53 - successfully relayed Task(192.168.1.108:8004,Partition(1,16775168,33550337),10,0)
+21:20:34 INFO  Thread-2 1878 Relay:76 - reply connection accepted from host 192.168.1.140
+21:20:34 INFO  Thread-2 1879 Relay:73 - waiting to accept reply connection on port = 9005
+21:20:34 INFO  Thread-13 1879 Ice:40 - ice started (id=25)
+21:20:34 INFO  Thread-13 1880 Ice:48 - received inbound message = Task(192.168.1.140:0,Result(0,10487780094639100,10487780395561600),-1,1)
+21:20:34 INFO  Thread-13 1881 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:34 INFO  Thread-13 1881 Ice:53 - successfully relayed Task(192.168.1.140:0,Result(0,10487780094639100,10487780395561600),-1,1)
+21:20:34 INFO  Thread-1 1943 Relay:76 - reply connection accepted from host 192.168.1.108
+21:20:34 INFO  Thread-1 1943 Relay:73 - waiting to accept reply connection on port = 8004
+21:20:34 INFO  Thread-14 1944 Ice:40 - ice started (id=26)
+21:20:34 INFO  Thread-14 1944 Ice:48 - received inbound message = Task(192.168.1.108:0,Result(1,2596068484425178,2596068834554394),-1,1)
+21:20:34 INFO  Thread-14 1944 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:34 INFO  Thread-14 1944 Ice:53 - successfully relayed Task(192.168.1.108:0,Result(1,2596068484425178,2596068834554394),-1,1)
+21:20:34 INFO  Thread-0 1945 Relay:99 - relaying Partition(1,4294934528,8589869057) as Task(192.168.1.108:8004,Partition(1,4294934528,8589869057),10,0)
+21:20:34 INFO  Thread-1 11456 Remote:57 - got connection from 127.0.0.1
+21:20:34 INFO  Thread-0 1946 Relay:113 - successfully sent Task(192.168.1.108:8004,Partition(1,4294934528,8589869057),10,0) to localhost:8000
+21:20:34 INFO  Thread-1 11457 Remote:54 - waiting to accept connection on port 8000
+21:20:34 INFO  Thread-0 1946 Relay:99 - relaying Partition(4294934529,8589869056,8589869057) as Task(192.168.1.108:9005,Partition(4294934529,8589869056,8589869057),10,0)
+21:20:34 INFO  Thread-8 11457 Ice:40 - ice started (id=24)
+21:20:34 INFO  Thread-8 11458 Ice:48 - received inbound message = Task(192.168.1.108:8004,Partition(1,4294934528,8589869057),10,0)
+21:20:34 INFO  Thread-8 11459 Ice:49 - actor handler = PerfectWorker (id=10)
+21:20:34 INFO  Thread-8 11459 Ice:53 - successfully relayed Task(192.168.1.108:8004,Partition(1,4294934528,8589869057),10,0)
+21:20:34 INFO  Thread-0 1950 Relay:113 - successfully sent Task(192.168.1.108:9005,Partition(4294934529,8589869056,8589869057),10,0) to 192.168.1.140:9000
+21:20:37 INFO  Thread-2 4795 Relay:76 - reply connection accepted from host 192.168.1.140
+21:20:37 INFO  Thread-2 4796 Relay:73 - waiting to accept reply connection on port = 9005
+21:20:37 INFO  Thread-15 4796 Ice:40 - ice started (id=27)
+21:20:37 INFO  Thread-15 4799 Ice:48 - received inbound message = Task(192.168.1.140:0,Result(0,10487781474724300,10487813321134100),-1,1)
+21:20:37 INFO  Thread-15 4799 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:37 INFO  Thread-15 4799 Ice:53 - successfully relayed Task(192.168.1.140:0,Result(0,10487781474724300,10487813321134100),-1,1)
+21:20:50 INFO  Thread-1 18187 Relay:76 - reply connection accepted from host 192.168.1.108
+21:20:50 INFO  Thread-1 18190 Relay:73 - waiting to accept reply connection on port = 8004
+21:20:50 INFO  Thread-16 18190 Ice:40 - ice started (id=28)
+21:20:50 INFO  Thread-16 18191 Ice:48 - received inbound message = Task(192.168.1.108:0,Result(2119578175,2596068899814688,2596133454199990),-1,1)
+21:20:50 INFO  Thread-16 18192 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:50 INFO  Thread-16 18192 Ice:53 - successfully relayed Task(192.168.1.108:0,Result(2119578175,2596068899814688,2596133454199990),-1,1)
+21:20:50 INFO  Thread-0 18193 Relay:99 - relaying Partition(1,4294934528,8589869056) as Task(192.168.1.108:8004,Partition(1,4294934528,8589869056),10,0)
+21:20:50 INFO  Thread-1 27705 Remote:57 - got connection from 127.0.0.1
+21:20:50 INFO  Thread-1 27705 Remote:54 - waiting to accept connection on port 8000
+21:20:50 INFO  Thread-0 18194 Relay:113 - successfully sent Task(192.168.1.108:8004,Partition(1,4294934528,8589869056),10,0) to localhost:8000
+21:20:50 INFO  Thread-9 27705 Ice:40 - ice started (id=25)
+21:20:50 INFO  Thread-0 18195 Relay:99 - relaying Partition(4294934529,8589869056,8589869056) as Task(192.168.1.108:9005,Partition(4294934529,8589869056,8589869056),10,0)
+21:20:50 INFO  Thread-9 27706 Ice:48 - received inbound message = Task(192.168.1.108:8004,Partition(1,4294934528,8589869056),10,0)
+21:20:50 INFO  Thread-9 27707 Ice:49 - actor handler = PerfectWorker (id=10)
+21:20:50 INFO  Thread-9 27707 Ice:53 - successfully relayed Task(192.168.1.108:8004,Partition(1,4294934528,8589869056),10,0)
+21:20:50 INFO  Thread-0 18199 Relay:113 - successfully sent Task(192.168.1.108:9005,Partition(4294934529,8589869056,8589869056),10,0) to 192.168.1.140:9000
+21:20:54 INFO  Thread-2 21999 Relay:76 - reply connection accepted from host 192.168.1.140
+21:20:54 INFO  Thread-2 21999 Relay:73 - waiting to accept reply connection on port = 9005
+21:20:54 INFO  Thread-17 22000 Ice:40 - ice started (id=29)
+21:20:54 INFO  Thread-17 22000 Ice:48 - received inbound message = Task(192.168.1.140:0,Result(8589869056,10487978896610700,10488007628903900),-1,1)
+21:20:54 INFO  Thread-17 22001 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:20:54 INFO  Thread-17 22001 Ice:53 - successfully relayed Task(192.168.1.140:0,Result(8589869056,10487978896610700,10488007628903900),-1,1)
+21:21:07 INFO  Thread-1 35518 Relay:76 - reply connection accepted from host 192.168.1.108
+21:21:07 INFO  Thread-1 35520 Relay:73 - waiting to accept reply connection on port = 8004
+21:21:07 INFO  Thread-18 35520 Ice:40 - ice started (id=30)
+21:21:07 INFO  Thread-18 35521 Ice:48 - received inbound message = Task(192.168.1.108:0,Result(8589869056,2596133890177557,2596202651477590),-1,1)
+21:21:07 INFO  Thread-18 35521 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:21:07 INFO  Thread-18 35522 Ice:53 - successfully relayed Task(192.168.1.108:0,Result(8589869056,2596133890177557,2596202651477590),-1,1)
+21:21:07 INFO  Thread-0 35523 Relay:99 - relaying Partition(1,68719345664,137438691328) as Task(192.168.1.108:8004,Partition(1,68719345664,137438691328),10,0)
+21:21:07 INFO  Thread-1 45035 Remote:57 - got connection from 127.0.0.1
+21:21:07 INFO  Thread-0 35524 Relay:113 - successfully sent Task(192.168.1.108:8004,Partition(1,68719345664,137438691328),10,0) to localhost:8000
+21:21:07 INFO  Thread-1 45036 Remote:54 - waiting to accept connection on port 8000
+21:21:07 INFO  Thread-0 35525 Relay:99 - relaying Partition(68719345665,137438691328,137438691328) as Task(192.168.1.108:9005,Partition(68719345665,137438691328,137438691328),10,0)
+21:21:07 INFO  Thread-10 45036 Ice:40 - ice started (id=26)
+21:21:07 INFO  Thread-10 45037 Ice:48 - received inbound message = Task(192.168.1.108:8004,Partition(1,68719345664,137438691328),10,0)
+21:21:07 INFO  Thread-10 45037 Ice:49 - actor handler = PerfectWorker (id=10)
+21:21:07 INFO  Thread-10 45037 Ice:53 - successfully relayed Task(192.168.1.108:8004,Partition(1,68719345664,137438691328),10,0)
+21:21:07 INFO  Thread-0 35528 Relay:113 - successfully sent Task(192.168.1.108:9005,Partition(68719345665,137438691328,137438691328),10,0) to 192.168.1.140:9000
+21:21:24 INFO  Thread-2 51960 Relay:76 - reply connection accepted from host 192.168.1.140
+21:21:24 INFO  Thread-2 51962 Relay:73 - waiting to accept reply connection on port = 9005
+21:21:24 INFO  Thread-19 51962 Ice:40 - ice started (id=31)
+21:21:24 INFO  Thread-19 51962 Ice:48 - received inbound message = Task(192.168.1.140:0,Result(0,10488184392392900,10488377520118200),-1,1)
+21:21:24 INFO  Thread-19 51963 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:21:24 INFO  Thread-19 51963 Ice:53 - successfully relayed Task(192.168.1.140:0,Result(0,10488184392392900,10488377520118200),-1,1)
+21:21:44 INFO  Thread-1 72584 Relay:76 - reply connection accepted from host 192.168.1.108
+21:21:44 INFO  Thread-1 72585 Relay:73 - waiting to accept reply connection on port = 8004
+21:21:44 INFO  Thread-20 72585 Ice:40 - ice started (id=32)
+21:21:44 INFO  Thread-20 72586 Ice:48 - received inbound message = Task(192.168.1.108:0,Result(17179836416,2596203205878730,2596350564177550),-1,1)
+21:21:44 INFO  Thread-20 72586 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:21:44 INFO  Thread-20 72586 Ice:53 - successfully relayed Task(192.168.1.108:0,Result(17179836416,2596203205878730,2596350564177550),-1,1)
+21:21:44 INFO  Thread-0 72586 Relay:99 - relaying Partition(1,1152921504069976064,2305843008139952128) as Task(192.168.1.108:8004,Partition(1,1152921504069976064,2305843008139952128),10,0)
+21:21:44 INFO  Thread-1 82099 Remote:57 - got connection from 127.0.0.1
+21:21:44 INFO  Thread-0 72588 Relay:113 - successfully sent Task(192.168.1.108:8004,Partition(1,1152921504069976064,2305843008139952128),10,0) to localhost:8000
+21:21:44 INFO  Thread-0 72588 Relay:99 - relaying Partition(1152921504069976065,2305843008139952128,2305843008139952128) as Task(192.168.1.108:9005,Partition(1152921504069976065,2305843008139952128,2305843008139952128),10,0)
+21:21:44 INFO  Thread-1 82099 Remote:54 - waiting to accept connection on port 8000
+21:21:44 INFO  Thread-11 82100 Ice:40 - ice started (id=27)
+21:21:44 INFO  Thread-11 82101 Ice:48 - received inbound message = Task(192.168.1.108:8004,Partition(1,1152921504069976064,2305843008139952128),10,0)
+21:21:44 INFO  Thread-11 82101 Ice:49 - actor handler = PerfectWorker (id=10)
+21:21:44 INFO  Thread-11 82101 Ice:53 - successfully relayed Task(192.168.1.108:8004,Partition(1,1152921504069976064,2305843008139952128),10,0)
+21:21:44 INFO  Thread-0 72594 Relay:113 - successfully sent Task(192.168.1.108:9005,Partition(1152921504069976065,2305843008139952128,2305843008139952128),10,0) to 192.168.1.140:9000
+21:22:01 INFO  Thread-2 88969 Relay:76 - reply connection accepted from host 192.168.1.140
+21:22:01 INFO  Thread-2 88971 Relay:73 - waiting to accept reply connection on port = 9005
+21:22:01 INFO  Thread-21 88971 Ice:40 - ice started (id=33)
+21:22:01 INFO  Thread-21 88972 Ice:48 - received inbound message = Task(192.168.1.140:0,Result(0,10488629188135900,10488823059533000),-1,1)
+21:22:01 INFO  Thread-21 88972 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:22:01 INFO  Thread-21 88973 Ice:53 - successfully relayed Task(192.168.1.140:0,Result(0,10488629188135900,10488823059533000),-1,1)
+21:22:20 INFO  Thread-1 107746 Relay:76 - reply connection accepted from host 192.168.1.108
+21:22:20 INFO  Thread-1 107748 Relay:73 - waiting to accept reply connection on port = 8004
+21:22:20 INFO  Thread-22 107748 Ice:40 - ice started (id=34)
+21:22:20 INFO  Thread-22 107748 Ice:48 - received inbound message = Task(192.168.1.108:0,Result(17179869176,2596351470356195,2596491895865782),-1,1)
+21:22:20 INFO  Thread-22 107749 Ice:49 - actor handler = PerfectDispatcher (id=10)
+21:22:20 INFO  Thread-22 107749 Ice:53 - successfully relayed Task(192.168.1.108:0,Result(17179869176,2596351470356195,2596491895865782),-1,1)

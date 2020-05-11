@@ -62,11 +62,9 @@ class ParaWorker(port: Int) extends Worker(port) {
         case partition: Partition =>
           val analysis = node analyze(partition)
           val dt = analysis.results.foldLeft(0L) { (sum, job) => sum + (job.result.t1 - job.result.t0) }
-          println("Sending Result " + Result(dt))
-          println("Of analysis " + analysis)
           sender ! Result(dt)
 
-        // Always throw for an illegal state, especially in loop
+        // Always throw for an illegal state, especially in event loop
         case _ => throw new IllegalStateException()
       }
     }

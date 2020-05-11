@@ -9,10 +9,10 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="scala-sdk-2.12.8" level="project" />
     <orderEntry type="library" name="org.eclipse.ecf:org.apache.log4j:1.2.15.v201012070815" level="project" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ParaScale-20190209.jar!/" />
+          <root url="jar://$MODULE_DIR$/ParaScale-20200415.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

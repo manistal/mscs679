@@ -43,7 +43,6 @@ class ParaDispatcher(sockets: List[String]) extends Dispatcher(sockets) {
     // and send partitions to workers 0 and 1 respectively
     workers(0) ! Partition(rung/2, 0)
     workers(1) ! Partition(rung/2, rung/2)
-    println("*** Sent Workers for Rung " + rung)
 
     // Wait for results
     // Accumulate the responses from the workers
@@ -89,7 +88,6 @@ class ParaDispatcher(sockets: List[String]) extends Dispatcher(sockets) {
     // Constants implemented as part of construction, used in reporting
     val workers_info = sockets.foldLeft("") { (result_str, entry) => result_str + entry + "(worker), " }
     val mongo_info = MongoHelper.getHost + " (mongo)"
-    //val ladder = List(1000, 2000, 4000, 8000, 16000, 32000)
     val ladder = List(1000, 2000, 4000, 8000, 16000, 32000, 64000, 100000)
 
     // Main Dispatcher Loop
@@ -104,7 +102,7 @@ class ParaDispatcher(sockets: List[String]) extends Dispatcher(sockets) {
     println("ParaBond Analysis")
     println("By Miguel Nistal")
     println("20 Apr 2020")
-    println("MemoryBoundNode")
+    println("BasicNode")
     println("Workers: " + sockets.length)
     println("Hosts: localhost (dispatcher), " + workers_info + mongo_info)
     println("Cores: " + Runtime.getRuntime.availableProcessors)
@@ -112,6 +110,6 @@ class ParaDispatcher(sockets: List[String]) extends Dispatcher(sockets) {
     result_table.foreach { row =>
       println(row)
     }
-
   }
+
 }
